@@ -26,11 +26,11 @@
                 <div class="divider"></div>
                   <div>
                     <button id="input-add-money" class="btn btn-lg">Add Money</button>
-                    <button class="btn btn-lg">Cash Out</button>
+                    <button id="cash-out" class="btn btn-lg">Cash Out</button>
                   </div>
                 <div class="divider"></div>
-                  <!-- form start -->
-                  <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl">
+                  <!--add money form start -->
+                  <div id="input-form" class="card bg-base-100  max-w-sm shrink-0 shadow-2xl hidden" >
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -49,7 +49,28 @@
                       </div>
                     </form>
                   </div>
-                  <!-- form end -->
+                  <!--add money  form end -->
+                  <!-- cash out form start -->
+                  <div id="cash-out-form" class="card bg-base-100 max-w-sm shrink-0 shadow-2xl hidden">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="input-amount2" type="number" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="password2" type="password" placeholder="password" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-out-button" class="btn btn-primary text-white">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- cash out form end -->
               </div>
             </div>
           </div>
